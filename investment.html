@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="img/logo-duo.svg" alt="company logo" class="header__logo" loading="lazy">  
+        </a>
+        <nav class="header__nav header__nav--desktop">
+            <ul class="header__nav-ul header__nav-ul--desktop">
+                <li class="header__nav-li header__nav-li--desktop"><a href="index.html" class="header__nav-link">HOME</a><div class="header__nav-underline"></div></li>
+                <li class="header__nav-li header__nav-li--desktop"><a href="about.html" class="header__nav-link">ABOUT US</a><div class="header__nav-underline"></div></li>
+                <li class="header__nav-li header__nav-li--desktop"><a href="investment.html" class="header__nav-link">INVESTMENT FOCUS</a><div class="header__nav-underline"></div></li>
+                <li class="header__nav-li header__nav-li--desktop"><a href="team.html" class="header__nav-link">MANAGEMENT TEAM</a><div class="header__nav-underline"></div></li>
+                <li class="header__nav-li header__nav-li--desktop"><a href="contact.html" class="header__nav-link">CONTACT</a><div class="header__nav-underline"></div></li>
+            </ul>
+        </nav>
+        <nav class="header__nav header__nav--mobile">
+            <i class="bi bi-list header__hamburguer-icon"></i>
+            <ul class="header__nav-ul header__nav-ul--mobile">
+                <i class="bi bi-x-lg header__x-icon"></i>
+                <li class="header__nav-li header__nav-li--mobile"><a href="index.html" class="header__nav-link">HOME</a></li>
+                <li class="header__nav-li header__nav-li--mobile"><a href="about.html" class="header__nav-link">ABOUT US</a></li>
+                <li class="header__nav-li header__nav-li--mobile"><a href="investment.html" class="header__nav-link">INVESTMENT FOCUS</a></li>
+                <li class="header__nav-li header__nav-li--mobile"><a href="team.html" class="header__nav-link">MANAGEMENT TEAM</a></li>
+                <li class="header__nav-li header__nav-li--mobile"><a href="contact.html" class="header__nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="lang-selector">
+            <ul class="lang-selector__list">  
+                <li class="lang-selector__lang">EN<i class="bi bi-chevron-down lang-selector__arrow"></i></li>            
+                <li class="lang-selector__lang lang-selector__lang--unselected">DE</li>
+                <li class="lang-selector__lang lang-selector__lang--unselected">ES</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+            <div class="heading heading--investment">
+                <h1 class="heading__title--white">Investment focus</h1>
+            </div>
+            <div class="container container--investment">
+                <p class="page__p">Our investment strategy is focused on businesses in special situations, such as strategic refocus of the seller, insufficient earnings or a lack of successors. <br><br>
+                    We are particularly active in supporting corporate divestitures and complex carve outs, in which sellers require a trusted partner to offer sensitive and long-term solutions. <br><br>
+                </p>
+                <p class="page__p bold">Target investment opportunities will meet the following criteria:</p>
+                <ul class="list">
+                    <li class="list__li"><i class="bi bi-record list__icon"></i>Corporate divestiture or carve out</li>
+                    <li class="list__li"><i class="bi bi-record list__icon"></i>Minimum turnover >EUR 10 million or significant asset base</li>
+                    <li class="list__li"><i class="bi bi-record list__icon"></i>Marginal or negative EBITDA performance</li>
+                    <li class="list__li"><i class="bi bi-record list__icon"></i>Majority ownership can be acquired, with a preference for 100%</li>
+                    <li class="list__li"><i class="bi bi-record list__icon"></i>No specific industry, but focus on traditional, established product and service companies</li>
+                    <li class="list__li"><i class="bi bi-record list__icon"></i>Scope for operational improvement</li>
+                    <li class="list__li"><i class="bi bi-record list__icon"></i>National and/or international growth potential</li>
+                    <li class="list__li"><i class="bi bi-record list__icon"></i>Cost and revenue synergies with other portfolio companies</li>
+                </ul>        
+            </div>
+        <section class="cta cta--background">
+            <div class="cta__text">
+                <p class="cta__p white-txt bold">Do you have an opportunity that meets the above criteria?</p>
+                <a class="btn2 btn2--white" role="button">Contact us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="img/logo-white.svg" alt="" class="footer__logo">
+        <nav class="footer__nav footer__nav--main">
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li"><a href="index.html" class="footer__link">HOME</a></li>
+                <li class="footer__nav-li"><a href="about.html" class="footer__link">ABOUT US</a></li>
+                <li class="footer__nav-li"><a href="investment.html" class="footer__link">INVESTMENT FOCUS</a></li>
+                <li class="footer__nav-li"><a href="team.html" class="footer__link">MANAGEMENT TEAM</a></li>
+                <li class="footer__nav-li"><a href="contact.html" class="footer__link">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav class="footer__nav footer__nav--secondary">
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li"><a href="" class="footer__link">Imprint</a></li>
+                <li class="footer__nav-li"><a href="" class="footer__link">Terms of use</a></li>
+                <li class="footer__nav-li"><a href="" class="footer__link">Privacy Policy</a></li>
+                <li class="footer__nav-li"><a href="" class="footer__link">Jobs at IIC</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

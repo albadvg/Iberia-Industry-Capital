@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="img/logo-duo.svg" alt="company logo" class="header__logo" loading="lazy">  
+        </a>
+        <nav class="header__nav header__nav--desktop">
+            <ul class="header__nav-ul header__nav-ul--desktop">
+                <li class="header__nav-li header__nav-li--desktop"><a href="index.html" class="header__nav-link">HOME</a><div class="header__nav-underline"></div></li>
+                <li class="header__nav-li header__nav-li--desktop"><a href="about.html" class="header__nav-link">ABOUT US</a><div class="header__nav-underline"></div></li>
+                <li class="header__nav-li header__nav-li--desktop"><a href="investment.html" class="header__nav-link">INVESTMENT FOCUS</a><div class="header__nav-underline"></div></li>
+                <li class="header__nav-li header__nav-li--desktop"><a href="team.html" class="header__nav-link">MANAGEMENT TEAM</a><div class="header__nav-underline"></div></li>
+                <li class="header__nav-li header__nav-li--desktop"><a href="contact.html" class="header__nav-link">CONTACT</a><div class="header__nav-underline"></div></li>
+            </ul>
+        </nav>
+        <nav class="header__nav header__nav--mobile">
+            <i class="bi bi-list header__hamburguer-icon"></i>
+            <ul class="header__nav-ul header__nav-ul--mobile">
+                <i class="bi bi-x-lg header__x-icon"></i>
+                <li class="header__nav-li header__nav-li--mobile"><a href="index.html" class="header__nav-link">HOME</a></li>
+                <li class="header__nav-li header__nav-li--mobile"><a href="about.html" class="header__nav-link">ABOUT US</a></li>
+                <li class="header__nav-li header__nav-li--mobile"><a href="investment.html" class="header__nav-link">INVESTMENT FOCUS</a></li>
+                <li class="header__nav-li header__nav-li--mobile"><a href="team.html" class="header__nav-link">MANAGEMENT TEAM</a></li>
+                <li class="header__nav-li header__nav-li--mobile"><a href="contact.html" class="header__nav-link">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="lang-selector">
+            <ul class="lang-selector__list">  
+                <li class="lang-selector__lang">EN <i class="bi bi-chevron-down lang-selector__arrow"></i></li>            
+                <li class="lang-selector__lang lang-selector__lang--unselected">DE</li>
+                <li class="lang-selector__lang lang-selector__lang--unselected">ES</li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="heading heading--contact">
+            <h1 class="heading__title--white">Contact</h1>
+        </div>
+        <div class="container container--contact">
+            
+            <div id="map"></div>            
+            <form action="" method="" class="form">
+                <ul class="form__list">
+                    <li class="form__item"><input type="text" class="form__input" id="name" placeholder="Name" required></li>
+                    <li class="form__item"><input type="email" class="form__input" id="email" placeholder="Email" required></li>
+                    <li class="form__item"><input type="text" class="form__input" id="subject" placeholder="Subject" required></li>
+                    <li class="form__item"><textarea name="message" id="message" id="message" cols="30" rows="10" class="form__input" placeholder="Your message"></textarea></li>
+                    <li class="form__item form__item--button"><input type="submit" class="form__input form__input--submit" value="Send" id="submit"></li>
+                </ul>
+            </form>
+
+            <div class="contact">
+                <p class="contact__name">Iberia Industry Capital Group</p>
+                <div class="contact__address">
+                    <p class="contact__p">6, Place du Marché</p>
+                    <p class="contact__p">6460 Echternach</p>
+                    <p class="contact__p">Grand Duchy of Luxembourg</p>
+                </div>
+                <div class="contact__numbers">
+                    <a href="#" class="contact__link"><i class="bi bi-telephone contact__icon" ></i>+352 27 40 21 88 58</a>
+                    <a href="#" class="contact__link"><i class="bi bi-envelope contact__icon" ></i>info@ibercap.com</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <img src="img/logo-white.svg" alt="" class="footer__logo">
+        <nav class="footer__nav footer__nav--main">
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li"><a href="index.html" class="footer__link">HOME</a></li>
+                <li class="footer__nav-li"><a href="about.html" class="footer__link">ABOUT US</a></li>
+                <li class="footer__nav-li"><a href="investment.html" class="footer__link">INVESTMENT FOCUS</a></li>
+                <li class="footer__nav-li"><a href="team.html" class="footer__link">MANAGEMENT TEAM</a></li>
+                <li class="footer__nav-li"><a href="contact.html" class="footer__link">CONTACT</a></li>
+            </ul>
+        </nav>
+        <nav class="footer__nav footer__nav--secondary">
+            <ul class="footer__nav-ul">
+                <li class="footer__nav-li"><a href="" class="footer__link">Imprint</a></li>
+                <li class="footer__nav-li"><a href="" class="footer__link">Terms of use</a></li>
+                <li class="footer__nav-li"><a href="" class="footer__link">Privacy Policy</a></li>
+                <li class="footer__nav-li"><a href="" class="footer__link">Jobs at IIC</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+    <script src="js/googleMap.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoXXJmIVtaLT6hbn0LRfTjKcZMO1mHE78&v=beta&libraries=marker&callback=initMap"></script>   
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        let submitBtn = document.getElementById('submit');
+        submitBtn.addEventListener('click' , function(e) {
+            e.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var subject = document.getElementById('subject').value;
+            var message = document.getElementById('message').value;
+            console.log(email);
+            Email.send({
+                SecureToken : "5baeed38-a76f-4d6f-9a01-64fed4e3d314",
+                To : `albadvg@yahoo.es , dvg.alba@gmail.com`,
+                From : 'dvg.alba@gmail.com', //has to be the elasticmail mail you used
+                Subject : `${subject}`,
+                Body : `<h1> Name: </h1> <br> ${name} <br><br> <h1>Subject: </h1> <br> ${subject} <br><br> <h1> Message: </h1> <br> ${message}`
+            }).then(
+            message => alert('Thank you')
+            );
+        });
+        
+    </script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
